@@ -19,9 +19,13 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// your first API endpoint...
-app.get('/api/hello', function (req, res) {
-  res.json({ greeting: 'hello API' });
+app.enable('trust proxy');
+app.get('/api/whoami', function (req, res) {
+  res.json({
+    "ipaddress": req.ip,
+    "language": req.get('Accept-Language'),
+    "software": req.get('User-Agent')
+  });
 });
 
 // listen for requests :)
