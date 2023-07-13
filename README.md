@@ -1,3 +1,6 @@
 # Request Header Parser Microservice
 
-This is the boilerplate for the Request Header Parser Microservice project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice
+This micro-service returns a JSON object with the following request header properties:
+* ip address
+* language
+* software
