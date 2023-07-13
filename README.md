@@ -1,3 +1,6 @@
 # Request Header Parser Microservice
 
-Request Header Parser Microservice project.
+This micro-service returns a JSON object with the following request header properties:
+* ip address
+* language
+* software
